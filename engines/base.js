@@ -1,23 +1,23 @@
 var apiUrl = "http://go.infinise.com/api/2.5/";
 
 
-/*	GOOGLE
+/*	DUCKDUCKGO
 	----------------------------------------------------- */
 
 eng.google = {
-	pageTitle: "Google",
-	logo: "google.png",
+	pageTitle: "DuckDuckGo",
+	logo: "duckduckgo.png",
 	places: {
-		'Web'    : ["http://www.google.com/search?q=%query%&hl=en",		apiUrl+"?eng=google&timestamp=%time%&q=%query%"],
-		'Images' : ["http://images.google.com/images?q=%query%&hl=en",	apiUrl+"?eng=google&timestamp=%time%&q=%query%"],
-		'Maps'   : ["http://maps.google.com/maps?q=%query%",			false]
+		'Web'    : ["https://duckduckgo.com/?q=%query%&kp=-2&kae=t&kam=osm&kay=b&kau=-1&kap=-1&kaq=-1&kak=-1&kax=-1"],
+		'Images' : ["https://duckduckgo.com/?q=%query%&kp=-2&kae=t&kam=osm&kay=b&kau=-1&kap=-1&kaq=-1&kak=-1&kax=-1&iax=images&ia=images"],
+		'Maps'   : ["https://duckduckgo.com/?q=%query%&kp=-2&kae=t&kam=osm&kay=b&kau=-1&kap=-1&kaq=-1&kak=-1&kax=-1&iaxm=maps",			false]
 	}
 };
 
 
 /*	WIKIPEDIA
 	----------------------------------------------------- */
-	
+
 eng.wikipedia = {
 	pageTitle: "Wikipedia",
 	logo: "wikipedia.png",
