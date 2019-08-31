@@ -1,1 +1,34 @@
-<head><link href='https://fonts.googleapis.com/css?family=Roboto:100&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic,latin-ext' rel='stylesheet' type='text/css'><meta http-equiv="Content-type" content="text/html;charset=UTF-8"><title id="title">Start</title><link rel="stylesheet" href="style.css" type="text/css"><script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script> <script src="scripts/tools.js" type="text/javascript"></script> <script src="scripts/scripts.js" type="text/javascript"></script> <script src="engines/base.js" type="text/javascript"></script> <script type="text/javascript" src="scripts/jquery.js"></script>  </head><body><div id="engines"></div><div id="container"><form id="form" onsubmit="return doSearch()"><div id="input"><input id="i" type="text" autocomplete="off" spellcheck="false" placeholder="Who the fuck is byReqz?" results="0" /></div> <a onclick="nextLanguage()" id="lang"></a><ul id="sugs"></ul></form><p id="method"></p></div></body>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title id="title">Start</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome.css" type="text/css">
+    <script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="scripts/tools.js" type="text/javascript"></script>
+    <script src="scripts/scripts.js" type="text/javascript"></script>
+    <script src="engines/base.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="engines"></div>
+    <div id="container">
+        <form id="form" onsubmit="return doSearch()">
+            <div id="input"><input id="i" type="text" autocomplete="off" spellcheck="false" placeholder="Search anything" results="0" /></div>
+            <a onclick="nextLanguage()" id="lang"></a>
+            <ul id="sugs"></ul>
+        </form>
+        <p id="method"></p>
+    </div>
+    <button id='toggleBG' title='Choose between random bg or the default bg!' onclick="toggleBG();">Toggle Background Image</button>
+    <script>
+        toggleBG()
+
+    </script>
+	<div id="tutorial" align="center">
+	<p>Input Text to search,hover over the Logo to see all Search Engines</p>
+	</div>
+</body>
